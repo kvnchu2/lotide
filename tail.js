@@ -13,6 +13,4 @@ const tail = function(array) {
   return tailElements;
 };
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-console.log(assertEqual(words.length, 3));
+module.exports = tail;
