@@ -8,10 +8,9 @@ let assertArraysEqual = function(actual, expected) {
 }
 
 
-
 const eqArrays = require('./eqArrays.js')
 
-assertArraysEqual([1, 2, 3], [1, '2', 3]);
+
 
 
 module.exports = assertArraysEqual;
