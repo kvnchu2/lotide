@@ -1,9 +1,3 @@
-let assertArraysEqual = require('./assertArraysEqual.js')
-
-
-
-const eqArrays = require('./eqArrays.js')
-
 const middle = function(array) {
   let middleNum = [];
   if (array.length % 2 === 0) {
@@ -14,9 +8,6 @@ const middle = function(array) {
   }
   return middleNum;
 }
-
-
-
 
 
 module.exports = middle;

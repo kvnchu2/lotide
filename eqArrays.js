@@ -1,6 +1,3 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = require('./assertEqual.js');
-
 const eqArrays = function(arrayOne,arrayTwo) {
   //stores all the true and false values to be searched at the end 
   let binaryArr = [];
@@ -27,9 +24,5 @@ const eqArrays = function(arrayOne,arrayTwo) {
 };
 
 
-console.log(assertEqual(eqArrays([[2, 3], [4, [5]]], [[2, 3], [4, [5, 6]]]), false)) // => false
-
-console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false)) // => false
-console.log(assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false)) // => false
 
 module.exports = eqArrays;

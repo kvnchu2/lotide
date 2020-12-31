@@ -1,12 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🙂 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😲 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-
 const eqArrays = function(arrayOne,arrayTwo) {
   //compares the length of each array and if not equal, return false
   if(arrayOne.length !== arrayTwo.length) {
@@ -48,15 +39,13 @@ const eqObjects = function(object1, object2) {
   return true;
 }
 
-console.log(assertEqual(eqObjects({ a: { z: 1, t: {s: 3} }, b: 2 }, { a: { z: 1, t:{s: 3} }, b: 2 }), true)) 
-console.log(assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), false));
-console.log(assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }), false));
 
 const cd = { c: "1", d: ["2", 3]};
 const dc = { d: ["2", 3], c: "1" };
-console.log(assertEqual(eqObjects(cd, dc), true)); // => true
+
 
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
-console.log(assertEqual(eqObjects(cd, cd2), false)); // => false
 
+
+module.exports = { eqObjects, eqArrays, cd, dc, cd2 }

@@ -1,4 +1,3 @@
-const assertArraysEqual = require('../assertArraysEqual.js');
 const middle = require('../middle.js');
 const assert = require('chai').assert;
 
